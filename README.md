@@ -1,82 +1,70 @@
-# Spring_Boot_Projects
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Welcome to the Spring Boot Projects repository! This repository is dedicated to showcasing various projects and examples built using the Spring Boot framework. Whether you are a beginner or an experienced developer, you will find a range of projects that can help you understand and implement different aspects of Spring Boot.
+## Available Scripts
 
-# Table of Contents
-* Introduction
-* Projects
-* Getting Started
-* Prerequisites
-* Installation
-* Usage
-* Contributing
-* License
-* Contact
+In the project directory, you can run:
 
+### `npm start`
 
-# Introduction
-This repository contains a collection of Spring Boot projects that demonstrate various features and functionalities of the framework. Each project is designed to be a standalone example that you can clone, build, and run on your local machine.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-# Projects
-Employee Management System
-E-commerce Application
-Blog Management System
-Library Management System
-Online Banking System
-Inventory Management System
-Note: Each project folder contains its own README file with detailed information about the project, including setup instructions and usage guidelines.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-# Getting Started
-To get started with any of the projects in this repository, follow the instructions below.
+### `npm test`
 
-# Prerequisites
-Java Development Kit (JDK) 11 or higher
-Apache Maven 3.6.3 or higher
-MySQL 8.0 or higher (or any other database based on the project)
-Postman (for API testing)
-Installation
-Clone the Repository:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-bash
-Copy code
-git clone https://github.com/Jayeshpansuriya/spring-boot-projects.git
-cd spring-boot-projects
-Navigate to the Project Directory:
+### `npm run build`
 
-bash
-Copy code
-cd project-directory
-Configure the Database:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Create a database as required by the project.
-Update the database configuration in src/main/resources/application.properties.
-Build the Project:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-# bash
-Copy code
-mvn clean install
-Run the Application:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-# bash
-Copy code
-mvn spring-boot:run
-Usage
-Access the application by navigating to http://localhost:8080 (or the configured port) in your web browser.
-Use Postman or any other API client to interact with the backend APIs.
-Contributing
-Contributions are welcome! If you have a project or an improvement that you would like to share, please follow these steps:
+### `npm run eject`
 
-#Fork the repository
-Create a new branch (git checkout -b feature/your-feature)
-Commit your changes (git commit -m 'Add some feature')
-Push to the branch (git push origin feature/your-feature)
-Open a pull request
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-# License
-This repository is licensed under the MIT License. See the LICENSE file for more details.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-# Contact
-For any questions or suggestions, feel free to reach out:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-LinkedIn Profile:https://www.linkedin.com/in/jayesh-pansuriya-7411a0222/
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
