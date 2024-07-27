@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# Employee Management System
+# Overview
+The Employee Management System is a Java-based application that allows users to manage a list of employees. This application supports CRUD (Create, Read, Update, Delete) operations on employee data. The project is built using Object-Oriented Programming (OOP) concepts and integrates various technologies and libraries for a robust and efficient system.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Features
+* Add a new employee
+* Edit the profile of an existing employee
+* Delete an employee
+* View employee details
+* Technologies Used
+* Java
+* Spring Boot
+* Postman
+* JavaScript
+* Node.js
+* JDBC
+* MySQL
+* JSON
+* HTML
+* CSS
+* Tailwind CSS
+  
+# Libraries and Tools
+* Jakarta
+* XMLFile
+* Hibernate
+* URLPat
+* Lombok
+* JPA
+* Bin Library
+* BULL (Bean Utils Light)
+* Maven
+* Spring Web
+* Spring MVC
+* Spring Boot Plugin
+* OIC Image
+* Data JPA
+* Web Server
+* Navigation Method in JS
+* Prerequisites
+* Java Development Kit (JDK) 11 or higher
+* Apache Maven 3.6.3 or higher
+* MySQL 8.0 or higher
+* Node.js 14.x or higher
+* Postman for API testing
+* Installation
+* Clone the Repository:
 
-## Available Scripts
+bash
+Copy code
+git clone https://github.com/yourusername/employee-management-system.git
+cd employee-management-system
+Configure the Database:
 
-In the project directory, you can run:
+Create a MySQL database named employee_db.
 
-### `npm start`
+Update the database configuration in src/main/resources/application.properties:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+properties
+Copy code
+spring.datasource.url=jdbc:mysql://localhost:3306/employee_db
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=update
+Build the Project:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy code
+mvn clean install
+Run the Application:
 
-### `npm test`
+bash
+Copy code
+mvn spring-boot:run
+Usage
+Access the Application:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Open your web browser and navigate to http://localhost:8080.
 
-### `npm run build`
+# API Endpoints:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Use Postman or any other API client to interact with the backend. The following endpoints are available:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Add New Employee:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ 
+Copy code
+POST /api/employees
+Body: {
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "phone": "1234567890"
+}
+Get All Employees:
 
-### `npm run eject`
+bash
+Copy code
+GET /api/employees
+Get Employee by ID:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
+Copy code
+GET /api/employees/{id}
+Update Employee:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+Copy code
+PUT /api/employees/{id}
+Body: {
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "phone": "1234567890"
+}
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ # Delete Employee:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+bash
+Copy code
+DELETE /api/employees/{id}
+Frontend
+The frontend is built using HTML, CSS, and Tailwind CSS.
+Use any modern browser to access the frontend UI.
+Ensure the backend server is running to interact with the APIs.
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Contributors
+* Jayesh Dineshbhai Pansuriya
+  
+# Acknowledgements
+Thanks to the Spring Boot community for providing an excellent framework.
+Special thanks to all the open-source contributors for their valuable libraries and tools.
