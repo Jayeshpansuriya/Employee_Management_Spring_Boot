@@ -1,6 +1,6 @@
 # Spring_Boot_Projects
 
-# Spring Boot Projects Repository
+
 Welcome to the Spring Boot Projects repository! This repository is dedicated to showcasing various projects and examples built using the Spring Boot framework. Whether you are a beginner or an experienced developer, you will find a range of projects that can help you understand and implement different aspects of Spring Boot.
 
 # Table of Contents
